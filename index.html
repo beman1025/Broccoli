@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Baby Broccoli</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <style>
+      body {
+        opacity: 0;
+        visibility: hidden;
+        background-color: #000;
+        transition: opacity 0.2s ease 0.2s, visibility 0.2s ease 0.2s;
+      }
+
+      .loaded body {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.min.css?_v=20250206182124" />
+    <link rel="icon" href="/assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="menu-open-bg"></div>
+      <header class="header">
+        <div class="header__container">
+          <a href="../" class="header__logo"
+            ><img src="img/logo.png" alt="JEETA"
+          /></a>
+          <div class="header__right">
+            <div class="header__menu menu">
+              <button type="button" class="menu__icon icon-menu">
+                <span></span>
+              </button>
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a
+                      href="#"
+                      data-goto=".about"
+                      data-goto-top="60"
+                      class="menu__link"
+                      >About</a
+                    >
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" data-goto=".how" class="menu__link"
+                      >How to Buy</a
+                    >
+                  </li>
+                  <li class="menu__item">
+                    <a
+                      href="#"
+                      data-goto=".tokenomics"
+                      data-goto-top="-20"
+                      class="menu__link"
+                      >Tokenomics</a
+                    >
+                  </li>
+                  <li class="menu__item">
+                    <a
+                      href="#"
+                      data-goto=".join"
+                      data-goto-top="40"
+                      class="menu__link"
+                      >Join us</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__actions" data-da=".menu__body, 767.98">
+              <div class="header__social">
+                <a
+                  href="https://x.com/babybroccolibsc"
+                  target="_blank"
+                  class="header__social-item"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="23"
+                    height="23"
+                    viewBox="0 0 23 23"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_4_185)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M20.6847 20.4856L13.5001 10.0137L13.5123 10.0235L19.9904 2.51782H17.8256L12.5484 8.62688L8.3577 2.51782L2.68025 2.51782L9.38782 12.2948L9.38701 12.294L2.31265 20.4856H4.47744L10.3444 13.6889L15.0073 20.4856H20.6847ZM7.49996 4.15125L17.5805 18.8522H15.865L5.77633 4.15125H7.49996Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_4_185">
+                        <rect
+                          width="22.9978"
+                          height="22.9978"
+                          fill="white"
+                          transform="translate(0 0.00219727)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a
+                  href="https://t.me/babybroccoli_official"
+                  target="_blank"
+                  class="header__social-item"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="23"
+                    viewBox="0 0 24 23"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_4_192)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19.3435 4.24538C19.5803 4.14571 19.8395 4.11133 20.0941 4.14583C20.3487 4.18033 20.5894 4.28244 20.7912 4.44154C20.993 4.60064 21.1484 4.81091 21.2413 5.05046C21.3342 5.29002 21.3612 5.5501 21.3195 5.80363L19.146 18.9874C18.9352 20.2591 17.5399 20.9884 16.3736 20.355C15.398 19.825 13.949 19.0085 12.6457 18.1565C11.994 17.7301 9.99779 16.3645 10.2431 15.3927C10.454 14.5618 13.8081 11.4396 15.7248 9.5833C16.4771 8.85401 16.134 8.4333 15.2456 9.10413C13.0395 10.7697 9.49754 13.3026 8.32645 14.0156C7.29337 14.6443 6.75479 14.7516 6.11079 14.6443C4.93587 14.4488 3.84625 14.1459 2.95691 13.777C1.75516 13.2786 1.81362 11.6265 2.95595 11.1454L19.3435 4.24538Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_4_192">
+                        <rect
+                          width="23"
+                          height="23"
+                          fill="white"
+                          transform="translate(0.390625)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <a
+                href="https://pancakeswap.finance/swap?outputCurrency=0xcomingsoon&inputCurrency=BNB"
+                target="_blank"
+                class="header__buy"
+              >
+                <span>Buy Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="page__hero hero">
+          <div id="heroBg" class="hero__bg">
+            <img src="img/hero/heroBg.jpg" alt="BG" />
+          </div>
+          <div class="hero__container">
+            <div id="heroTitle" class="hero__title">
+              <img src="img/hero/title.png" alt="JEET CAPITAL" />
+            </div>
+          </div>
+          <div class="hero__front">
+            <img src="img/hero/footer.webp" alt="Image" />
+            <img src="img/hero/front-mob.png" alt="Image" />
+          </div>
+          <div class="hero__actions">
+            <a
+              href="https://pancakeswap.finance/swap?outputCurrency=0xcomingsoon&inputCurrency=BNB"
+              target="_blank"
+              class="hero__buy"
+            >
+              <span>Buy Now</span>
+            </a>
+            <div class="hero__social">
+              <a
+                href="https://x.com/babybroccolibsc"
+                target="_blank"
+                class="hero__social-item"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="59"
+                  height="58"
+                  viewBox="0 0 59 58"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_4_50)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M52.1889 51.6569L34.07 25.2477L34.101 25.2725L50.4378 6.34412H44.9785L31.6701 21.7505L21.1015 6.34412L6.78367 6.34412L23.6994 31.0005L23.6973 30.9984L5.85663 51.6569H11.316L26.1118 34.5163L37.8711 51.6569H52.1889ZM18.9384 10.4634L44.3604 47.5375H40.0342L14.5916 10.4634H18.9384Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_4_50">
+                      <rect
+                        width="57.9978"
+                        height="57.9978"
+                        fill="white"
+                        transform="translate(0.0243835)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a
+                href="https://t.me/babybroccoli_official"
+                target="_blank"
+                class="hero__social-item"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="69"
+                  height="68"
+                  viewBox="0 0 69 68"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_4_62)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M56.0587 12.5516C56.7589 12.2569 57.5253 12.1552 58.2781 12.2572C59.0308 12.3592 59.7425 12.6611 60.339 13.1315C60.9355 13.6019 61.3951 14.2236 61.6698 14.9318C61.9445 15.64 62.0244 16.409 61.9011 17.1586L55.4751 56.1367C54.8517 59.8966 50.7264 62.0527 47.2782 60.1799C44.3939 58.6131 40.1099 56.1991 36.2566 53.6802C34.3299 52.4194 28.4281 48.3819 29.1534 45.5089C29.7767 43.0524 39.6934 33.8214 45.3601 28.3332C47.5842 26.1771 46.5699 24.9332 43.9434 26.9166C37.4211 31.8409 26.9491 39.3294 23.4867 41.4374C20.4324 43.2961 18.8401 43.6134 16.9361 43.2961C13.4624 42.7181 10.2409 41.8227 7.61158 40.7319C4.05858 39.2586 4.23141 34.3739 7.60874 32.9516L56.0587 12.5516Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_4_62">
+                      <rect
+                        width="68"
+                        height="68"
+                        fill="white"
+                        transform="translate(0.0243835)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="page__way way">
+          <div class="way__bg">
+            <img src="img/way/bg.png" alt="BG" />
+          </div>
+          <div class="way__bg-bottom"></div>
+          <div class="way__container">
+            <div class="way__body" data-watch-threshold="0.9" data-watch>
+              <div class="way__body-bg">
+                <img src="img/way/main.png" alt="BG" />
+                <img src="img/way/main-mob2.png" alt="BG" />
+              </div>
+              <div class="way__body-main">
+                <div class="way__body-images">
+                  <div
+                    class="way__body-item"
+                    data-watch-threshold="0.75"
+                    data-watch-once
+                    data-watch
+                  >
+                    <div class="way__body-item-dec">
+                      <img src="img/way/dec.svg" alt="Decor" />
+                    </div>
+                    <div class="way__body-item-text">
+                      From CZ’s best friend to the hottest meme coin on BNB Chain—$BABYBROCCOLI is here to take over! A fun, community-driven token inspired by the legendary dog Broccoli. Join the pack and don’t miss out!
+                    </div>
+                  </div>
+                  <div
+                    class="way__body-item"
+                    data-watch-threshold="0.75"
+                    data-watch-once
+                    data-watch
+                  >
+                    <div class="way__body-item-dec">
+                      <img src="img/way/dec.svg" alt="Decor" />
+                    </div>
+                    <div class="way__body-item-text">
+                      BNB Chain loves baby tokens – CZ’s a proven trend.<br/>
+                      It’s Broccoli’s time to shine – a meme that’s ready to take off.
+                    </div>
+                  </div>
+                </div>
+                <div class="way__body-items">
+                  <div class="way__body-image">
+                    <img src="img/way/gallery.png" alt="Image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__about about" data-watch="navigator">
+          <div class="about__bg"></div>
+          <div class="about__container">
+            <div class="about__content">
+              <h2 class="about__title">ABOUT US</h2>
+              <div class="about__items">
+                <div
+                  class="about__item"
+                  data-watch-threshold="0.75"
+                  data-watch-once
+                  data-watch
+                >
+                  <div class="about__item-dec">
+                    <img src="img/about/dec.svg" alt="Decor" />
+                  </div>
+                  <div class="about__item-text">
+                    Inspired by CZ's Malinois, $BABYBROCCOLI is the playful, baby version—full of charm, energy, and meme power! Built by the community, for the community, $BABYBROCCOLI is here to bring fun and innovation to the BNB Chain, the fastest-growing blockchain in crypto.
+                  </div>
+                </div>
+                <div
+                  class="about__item"
+                  data-watch-threshold="0.75"
+                  data-watch-once
+                  data-watch
+                >
+                  <div class="about__item-dec">
+                    <img src="img/about/dec.svg" alt="Decor" />
+                  </div>
+                  <div class="about__item-text">
+                    $BABYBROCCOLI isn't just a token — it's the beginning of a new meme dynasty.
+                  </div>
+                </div>
+                <div
+                  class="about__item"
+                  data-watch-threshold="0.75"
+                  data-watch-once
+                  data-watch
+                >
+                  <div class="about__item-dec">
+                    <img src="img/about/dec.svg" alt="Decor" />
+                  </div>
+                  <div class="about__item-text">
+                    ✔ A community-first project – backed by holders, not VCs.<br/>
+✔ Longevity - Steady growth, locked liquidity, and a robust marketing plan
+                  </div>
+                </div>
+              </div>
+              <div class="about__bottom">
+                <div class="about__bottom-text">
+                  Join Baby Broccoli if this sounds like you!
+                </div>
+                <a
+                  href="https://dexscreener.com/bsc/0xcomingsoon"
+                  target="_blank"
+                  class="about__bottom-button"
+                >
+                  Join Now!
+                </a>
+              </div>
+            </div>
+            <div class="about__image">
+              <img src="img/about/01.png" alt="JEETA" />
+            </div>
+          </div>
+        </section>
+        <section class="page__how how" data-watch="navigator">
+          <div class="how__bg">
+            <img src="img/how/bg.png" alt="BG" />
+          </div>
+          <div class="how__container">
+            <div class="how__image">
+              <img src="img/how/banner.webp" alt="JEET" style="margin-top:450px; width: 150%;"/>
+            </div>
+            <div class="how__content">
+              <h2 class="how__title">How <span>to</span> buy</h2>
+              <div class="how__items">
+                <div class="how__item">
+                  <h3><span>1.</span>Create a wallet</h3>
+                  <p>
+                    Download metamask or your wallet of choice from the app store or google play store for free.
+                      Desktop users, download the google chrome extension by going to metamask.io.
+                  </p>
+                </div>
+                <div class="how__item">
+                  <h3><span>2.</span>Get some BNB</h3>
+                  <p>
+                    Have BNB in your wallet to switch to $BABYBROCCOLI. If you don’t have any BNB, you can buy directly on
+                      metamask, transfer from another wallet, or buy on another exchange and send it to your wallet.
+                  </p>
+                </div>
+                <div class="how__item">
+                  <h3>
+                    <span>3.</span>Go to DEX
+                  </h3>
+                  <p>
+                    Go to pancakeswap.finance in google chrome or on the browser inside your Metamask app. Connect
+                      your wallet. Paste the $BABYBROCCOLI token address into Uniswap, select Baby Broccoli, and confirm. When Metamask
+                      prompts you for a wallet signature, sign.
+                  </p>
+                </div>
+                <div class="how__item">
+                  <h3>
+                    <span>4.</span>Switch BNB
+                  </h3>
+                  <p>
+                    Switch BNB for $BABYBROCCOLI. We have ZERO taxes so you don’t need to worry about buying with a specific
+                      slippage, although you may need to use slippage during times of market volatility.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__tokenomics tokenomics" data-watch="navigator">
+          <div class="tokenomics__bg">
+            <img src="img/tokenomics/bg.png" alt="BG" />
+          </div>
+          <div class="tokenomics__box">
+            <div class="tokenomics__left">
+              <div class="tokenomics__left-wall">
+                <img src="img/tokenomics/wall.png" alt="wall" />
+              </div>
+              <div class="tokenomics__left-jeetta">
+                <img src="img/tokenomics/petting.webp" alt="JEETA" />
+              </div>
+            </div>
+            <div class="tokenomics__right pr-func">
+              <div class="tokenomics__title">
+                <img src="img/tokenomics/Title.png" alt="tokenomics" />
+              </div>
+              <div class="tokenomics__body">
+                <img src="img/tokenomics/tok.png" alt="tokenomics" />
+                <div class="tokenomics__body-ca">
+                  <span>CA:</span>
+                  <span>0xcomingsoon</span>
+                  <button type="button" class="copy-ca-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="29"
+                      height="35"
+                      viewBox="0 0 29 35"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.785076 8.05665V34.9056H21.699V8.05665H0.785076ZM4.27067 11.6365H18.2133V31.3258H4.27067V11.6365ZM9.49914 0.896973V4.47685H25.1846V25.956H28.6702V0.896973H9.49914Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="tokenomics__body-dec2">
+                  <img src="img/tokenomics/dec2.png" alt="Decor" />
+                </div>
+                <div class="tokenomics__body-dec3">
+                  <img src="img/tokenomics/dec3.png" alt="Decor" />
+                </div>
+                <div class="tokenomics__body-dec4">
+                  <img src="img/tokenomics/dec4.png" alt="Decor" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__join join" data-watch="navigator">
+          <div class="join__bg">
+            <img src="img/join/bg.jpg" alt="BG" />
+          </div>
+          <div class="join__container">
+            <div class="join__title">
+              <img src="img/join/title.png" alt="Join us" />
+            </div>
+            <div
+              class="join__actions"
+              data-watch-threshold="0.75"
+              data-watch-once
+              data-watch
+            >
+              <a
+                href="https://pancakeswap.finance/swap?outputCurrency=0xcomingsoon&inputCurrency=BNB"
+                target="_blank"
+                class="join__buy"
+              >
+                <span>Buy Now</span>
+              </a>
+              <div class="join__social">
+                <a
+                  href="https://x.com/babybroccolibsc"
+                  target="_blank"
+                  class="join__social-item"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="58"
+                    height="58"
+                    viewBox="0 0 58 58"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_4_310)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M52.1645 51.6569L34.0456 25.2477L34.0766 25.2725L50.4134 6.34412H44.9541L31.6456 21.7505L21.0771 6.34412L6.75926 6.34412L23.675 31.0005L23.6729 30.9984L5.83221 51.6569H11.2916L26.0874 34.5163L37.8466 51.6569H52.1645ZM18.914 10.4634L44.336 47.5375H40.0098L14.5672 10.4634H18.914Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_4_310">
+                        <rect width="57.9978" height="57.9978" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a
+                  href="https://t.me/babybroccoli_official"
+                  target="_blank"
+                  class="join__social-item"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="68"
+                    height="68"
+                    viewBox="0 0 68 68"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_4_322)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M56.0344 12.5516C56.7346 12.2569 57.501 12.1552 58.2537 12.2572C59.0065 12.3592 59.7182 12.6611 60.3147 13.1315C60.9112 13.6019 61.3707 14.2236 61.6455 14.9318C61.9202 15.64 62.0001 16.409 61.8768 17.1586L55.4507 56.1367C54.8274 59.8966 50.7021 62.0527 47.2539 60.1799C44.3696 58.6131 40.0856 56.1991 36.2323 53.6802C34.3056 52.4194 28.4038 48.3819 29.1291 45.5089C29.7524 43.0524 39.6691 33.8214 45.3358 28.3332C47.5599 26.1771 46.5456 24.9332 43.9191 26.9166C37.3968 31.8409 26.9248 39.3294 23.4624 41.4374C20.4081 43.2961 18.8158 43.6134 16.9118 43.2961C13.4381 42.7181 10.2166 41.8227 7.58725 40.7319C4.03425 39.2586 4.20709 34.3739 7.58442 32.9516L56.0344 12.5516Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_4_322">
+                        <rect width="68" height="68" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="join__main">
+            <img src="img/join/main.png" alt="Image" />
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__container">
+            <div class="footer__top-body">
+              <a href="#" data-goto=".hero" class="footer__top-logo">
+                <img src="img/footer/logo.png" alt="Logo" />
+              </a>
+              <div class="footer__top-menu">
+                <a
+                  href="#"
+                  data-goto=".about"
+                  data-goto-top="60"
+                  class="footer__top-menu-item"
+                  >About</a
+                >
+                <a href="#" data-goto=".how" class="footer__top-menu-item"
+                  >How to Buy</a
+                >
+                <a
+                  href="#"
+                  data-goto=".tokenomics"
+                  data-goto-top="-20"
+                  class="footer__top-menu-item"
+                  >Tokenomics</a
+                >
+                <a
+                  href="#"
+                  data-goto=".join"
+                  data-goto-top="40"
+                  class="footer__top-menu-item"
+                  >Join us</a
+                >
+              </div>
+              <div class="footer__top-social">
+                <a
+                  href="https://x.com/babybroccolibsc"
+                  target="_blank"
+                  class="footer__top-social-item"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="20"
+                    viewBox="0 0 22 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M16.7911 0.228271H20.013L12.9749 8.2928L21.2555 19.2686H14.7727L9.69147 12.6132L3.88393 19.2686H0.659018L8.18631 10.6398L0.246338 0.229772H6.89424L11.4803 6.31193L16.7911 0.228271ZM15.6581 17.3358H17.4439L5.91882 2.06057H4.00398L15.6581 17.3358Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://t.me/babybroccoli_official"
+                  target="_blank"
+                  class="footer__top-social-item"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="29"
+                    height="30"
+                    viewBox="0 0 29 30"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M24.9788 4.80196C25.3039 4.66646 25.6596 4.61972 26.0091 4.66662C26.3585 4.71352 26.6889 4.85233 26.9658 5.06862C27.2428 5.2849 27.4561 5.57075 27.5836 5.89641C27.7111 6.22206 27.7482 6.57562 27.691 6.92029L24.7079 24.8427C24.4185 26.5715 22.5034 27.5629 20.9027 26.7018C19.5638 25.9814 17.575 24.8714 15.7862 23.7132C14.8918 23.1335 12.1521 21.277 12.4888 19.956C12.7781 18.8265 17.3817 14.582 20.0123 12.0585C21.0448 11.0671 20.5739 10.4951 19.3546 11.4071C16.3268 13.6713 11.4655 17.1146 9.85818 18.0839C8.44029 18.9385 7.7011 19.0844 6.81722 18.9385C5.20466 18.6727 3.70917 18.261 2.48858 17.7595C0.839193 17.082 0.919427 14.836 2.48726 14.182L24.9788 4.80196Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://pancakeswap.finance/swap?outputCurrency=0xcomingsoon&inputCurrency=BNB"
+                  target="_blank"
+                  class="footer__top-social-item"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M17.3125 11.5989C17.9577 11.2898 18.7784 10.8346 19.6002 10.2109C19.7734 10.5568 19.7926 10.8586 19.7031 11.1023C19.6398 11.274 19.5206 11.4234 19.364 11.5422C19.1943 11.6706 18.9822 11.7643 18.7479 11.8148C18.3033 11.911 17.7841 11.855 17.3125 11.5989ZM17.4244 14.7669L18.2783 15.2411C16.5348 16.1805 16.0607 17.9248 15.4975 19.6237C14.9346 17.9248 14.4605 16.1803 12.717 15.2411L13.5709 14.7669C13.7403 14.7053 13.8493 14.546 13.8408 14.372C13.7624 12.7809 14.2094 12.0772 14.8124 11.6355C15.0285 11.4773 15.2646 11.3979 15.4975 11.3979C15.7305 11.3979 15.9666 11.4773 16.1827 11.6355C16.7855 12.0774 17.2325 12.7809 17.1543 14.372C17.1457 14.546 17.2551 14.7053 17.4244 14.7669ZM15.4978 4.37769C16.4848 4.40321 17.4744 4.58735 18.3332 4.94567C18.928 5.19419 19.4827 5.52228 19.9853 5.91477C20.2122 6.09196 20.399 6.26314 20.6049 6.46023C21.16 6.47862 21.9713 5.88586 22.348 5.33121C21.6997 7.37395 18.7418 9.7861 16.6941 10.7092C16.6933 10.7089 16.6927 10.7085 16.6922 10.7081C16.3247 10.4383 15.9113 10.3034 15.4979 10.3034C15.0846 10.3034 14.6712 10.4383 14.3037 10.7081C14.3031 10.7085 14.3026 10.709 14.3018 10.7092C12.2536 9.7861 9.29598 7.37377 8.64771 5.33121C9.02437 5.88586 9.8355 6.47881 10.3906 6.46023C10.5964 6.26333 10.7833 6.09196 11.0102 5.91477C11.5126 5.52228 12.0676 5.19419 12.6623 4.94567C13.5213 4.58735 14.5107 4.40321 15.4978 4.37769ZM13.683 11.5989C13.038 11.2898 12.2171 10.8346 11.3953 10.2109C11.2221 10.5568 11.2029 10.8586 11.2922 11.1023C11.3554 11.274 11.4747 11.4234 11.6313 11.5422C11.8012 11.6706 12.0132 11.7643 12.2476 11.8148C12.6922 11.911 13.2116 11.855 13.683 11.5989Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.5005 9.44635C20.9529 9.00749 21.3516 8.52172 21.6721 8.08813L21.8349 8.38264C22.359 9.39059 22.6314 10.3946 22.6314 11.5244L22.6302 13.3173L22.64 14.2466C22.6779 16.5283 23.1916 18.8366 24.355 20.9492L21.9208 19.0624L20.1986 21.749L18.3893 20.1117L15.4978 24.6221L12.6064 20.1119L10.7971 21.7492L9.07484 19.0626L6.64069 20.9494C7.80407 18.8368 8.31761 16.5283 8.35568 14.2468L8.36545 13.3175L8.36428 11.5246C8.36428 10.3946 8.63647 9.39078 9.16076 8.38282L9.32341 8.08832C9.64403 8.52172 10.0426 9.00749 10.495 9.44655L10.3536 9.72866C10.0791 10.2765 9.98828 10.8892 10.2021 11.472C10.3399 11.8472 10.5915 12.1691 10.9158 12.4148C11.2307 12.6534 11.6035 12.8143 11.9937 12.8987C12.2479 12.9537 12.5068 12.9764 12.7642 12.9687C12.7042 13.2959 12.6778 13.6351 12.6763 13.9808L10.3802 15.2557L12.152 16.2103C12.2936 16.2867 12.4285 16.374 12.555 16.4718C14.0158 17.7326 14.8941 21.4624 15.4976 23.2842C16.1012 21.4624 16.9795 17.7326 18.4403 16.4718C18.5668 16.3742 18.7017 16.2867 18.8433 16.2103L20.6151 15.2557L18.319 13.9808C18.3173 13.6351 18.291 13.2959 18.2311 12.9687C18.4885 12.9764 18.7474 12.9537 19.0016 12.8987C19.3918 12.8143 19.7645 12.6534 20.0795 12.4148C20.4038 12.1691 20.6553 11.8472 20.7932 11.472C21.007 10.8894 20.9162 10.2767 20.6417 9.72866L20.5005 9.44635Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.dextools.io/app/en/solana/pair-explorer/5XE46W9FzJQbdx9us5THi1utcuQh6YCBd5Dc6skNginy?t=1738858663741"
+                  target="_blank"
+                  class="footer__top-social-item"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="27"
+                    height="28"
+                    viewBox="0 0 27 28"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.8467 3.8864C9.50888 4.60337 8.41436 5.21015 8.41465 5.23486C8.41527 5.29851 11.6254 6.97128 11.7394 6.96718C11.7911 6.96545 12.1672 6.7873 12.5749 6.57157L13.3162 6.17926L14.1259 6.60746L14.9355 7.03575L16.2614 6.42278C18.2592 5.49911 18.4667 5.39788 18.4342 5.36393C18.3911 5.31878 17.6746 4.92277 15.7304 3.86965C14.7908 3.36068 13.8789 2.86169 13.7038 2.76065C13.5286 2.65952 13.3615 2.57829 13.3323 2.57986C13.3031 2.58143 12.1846 3.16942 10.8467 3.8864ZM4.97901 7.01253L3.58638 7.75271V11.001C3.58638 12.7876 3.60463 14.2493 3.62711 14.2493C3.6496 14.2493 4.33467 13.9437 5.14969 13.5701L6.63159 12.891V9.46715L7.3558 9.87306C7.9138 10.1856 8.47226 10.4974 9.03088 10.8087L9.9818 11.3384L10.4049 11.1414C10.6703 11.0178 10.9351 10.8929 11.1994 10.7668C11.4037 10.6689 11.905 10.4366 12.3136 10.2504C12.7221 10.0642 13.1003 9.87681 13.1539 9.83418C13.2251 9.77746 12.3565 9.28363 9.94132 8.00757C8.12084 7.04568 6.57291 6.2617 6.5015 6.26549C6.4301 6.26929 5.74502 6.60539 4.97901 7.01253ZM18.6851 7.22036C17.7366 7.66087 16.9598 8.03893 16.959 8.06048C16.9582 8.08203 17.4751 8.39828 18.1078 8.76318C18.7405 9.12819 19.2582 9.4463 19.2582 9.47027C19.2582 9.49424 18.6983 9.7733 18.0141 10.0907C17.3298 10.408 15.6002 11.2116 14.1704 11.8766L9.37964 14.1046C8.17454 14.6651 7.08828 15.1702 6.96571 15.2274C4.50419 16.3738 3.82766 16.6919 3.73476 16.7465C3.64132 16.8015 3.62019 17.1209 3.60355 18.7239L3.58368 20.636L4.82909 21.2888L6.07444 21.9417L7.8013 21.1399C8.75114 20.6989 9.52822 20.3151 9.52822 20.2867C9.52822 20.2584 9.35268 20.1409 9.13829 20.0251C8.9238 19.9094 8.48091 19.6533 8.15408 19.4558C7.82731 19.2582 7.50149 19.0771 7.42992 19.053C7.3584 19.029 7.30097 18.9871 7.3021 18.9597C7.30328 18.9324 8.06374 18.5609 8.99187 18.1338C10.7946 17.3046 12.1742 16.6654 15.136 15.2874C16.4603 14.6713 17.785 14.0558 19.1096 13.4403C20.2738 12.8996 21.6275 12.2682 22.1177 12.0371L23.009 11.617L23.0288 9.68319L23.0487 7.74948L21.7855 7.08248C21.0907 6.71562 20.497 6.4164 20.4658 6.41751C20.4347 6.41853 19.6334 6.77979 18.6851 7.22036ZM22.6707 14.1966C22.4845 14.2902 22.1169 14.4654 21.8537 14.5858C21.5905 14.7063 21.091 14.9381 20.7437 15.1012L20.1124 15.3974L20.098 17.0951C20.0901 18.0288 20.0567 18.7885 20.0237 18.7837C19.949 18.7722 18.7657 18.1478 17.5764 17.4921C16.7179 17.0188 16.6639 17 16.4622 17.1029C16.3456 17.1624 15.6485 17.4839 14.9132 17.8177C14.1779 18.1514 13.5523 18.4463 13.5228 18.473C13.4935 18.4996 14.9734 19.3248 16.8116 20.307L20.1537 22.0926L21.5814 21.3327C22.3666 20.9149 23.0342 20.5337 23.0649 20.4857C23.1341 20.378 23.1282 14.0117 23.0589 14.0203C23.0315 14.0237 22.8568 14.1031 22.6707 14.1966ZM14.7647 21.669C14.517 21.7786 14.2694 21.8883 14.0219 21.9981C13.2745 22.3308 13.4209 22.3419 12.5317 21.8865C11.9394 21.5831 11.6841 21.4895 11.5734 21.535C11.4903 21.569 10.7749 21.9002 9.9836 22.2708C9.19234 22.6415 8.51748 22.9447 8.48396 22.9447C8.15193 22.9447 8.70394 23.2839 10.8336 24.3893L13.3313 25.6854L14.3822 25.1517C14.9602 24.8581 16.126 24.2701 16.9729 23.8452C17.8197 23.4202 18.5022 23.0613 18.4895 23.0479C18.4766 23.0343 17.767 22.6594 16.9125 22.2147L15.3588 21.4063L14.7647 21.669Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__container">
+            <div class="footer__bottom-body">
+              <span>2025 © ALL RIGHTS RESERVED</span>
+              <!-- <a href="https://t.me/osnovoco" target="_blank">
+          <span>Designed by</span>
+          <img src="img/osnovo.svg" alt="Osnovo" />
+        </a> -->
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/app.min.js?_v=20250206182124"></script>
+  </body>
+</html>
